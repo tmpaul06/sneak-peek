@@ -4,6 +4,7 @@ window.onload = function() {
   };
 
   var ENTITY_MAP = {
+    "japan": "Location:Japan",
     "samsung": "Manufacturer:Samsung",
     "sony": "Manufacturer:Sony",
     "lenovo": "Manufacturer:Lenovo",
