@@ -1,10 +1,12 @@
 // Start a simple express server that talks to MySQL!
 var express = require("express");
 var bodyParser = require('body-parser');
-var HOST = process.env.MYSQL_HOST;
-var USER = process.env.MYSQL_USER;
-var PASSWORD = process.env.MYSQL_PASSWORD;
-var DATABASE = process.env.MYSQL_DATABASE;
+
+// Env variables
+var HOST = process.env.MYSQL_HOST || "localhost";
+var USER = process.env.MYSQL_USER || "root";
+var PASSWORD = process.env.MYSQL_PASSWORD || "password";
+var DATABASE = process.env.MYSQL_DATABASE || "test";
 
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
